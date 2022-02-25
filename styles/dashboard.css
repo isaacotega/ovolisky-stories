@@ -1,0 +1,79 @@
+#dashboardTypeSwitcher {
+	background-color: #FFF0F0;
+	height: 2cm;
+	width: 100%;
+	border: none;
+	box-shadow: 0 0 10px 0 black;
+	line-height: 2cm;
+	text-align: center;
+	position: fixed;
+	top: 3cm;
+	z-index: 1;
+}
+
+#dashboardTypeSwitcher .typeHolder {
+	font-weight: 300;
+	font-size: 40px;
+	color: blue;
+	width: 49.5%;
+	display: inline-block;
+}
+
+#dashboardTypeSwitcher #selected {
+	border-bottom: 5px solid indigo;
+	color: indigo;
+}
+
+#placeholder {
+	height: 2cm;
+}
+
+h3 {
+	line-height: 2cm;
+	color: indigo;
+	font-size: 35px;
+	font-weight: 700;
+	font-family: monaco;
+	margin-left: 1cm;
+}
+
+.container {
+	box-shadow: 0 0 10px 0 black;
+	background-color: rgba(255, 239, 200, 0.2);
+	width: 96%;
+	margin-left: 2%;
+	border-radius: 10px;
+	
+}
+
+.container #content {
+	overflow: auto;
+	max-height: 35cm;
+	padding: 2cm 0;
+}
+
+.box #info {
+	position: relative;
+}
+
+#icnEdit {
+	background: rgba(255, 239, 200, 0.2);
+	display: block;
+	height: 2cm;
+	width: 2cm;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#icnEdit:active {
+	background: rgba(255, 239, 200, 0.4);
+}
+
+#icnEdit svg {
+	fill: red;
+	height: 50%;
+	width: 50%;
+	transform: translateX(10%) translateY(50%);
+}

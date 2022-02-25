@@ -1,0 +1,269 @@
+	#main {
+		text-align: center;
+	}
+	
+	#nick {
+		font-weight: 700;
+		text-align: center;
+		width: 100%;
+		color: red;
+		font-size: 40px;
+		font-family: cursive;
+		margin: 1cm 0;
+	}
+	
+	#storyHolder {
+		width: 96%;
+		margin: 1cm 0;
+		display: inline-block;
+		text-align: left;
+	}
+	
+	#storyHolder p {
+		font-size: 25px;
+		text-indent: 1cm;
+	}
+	
+	#prevBtn {
+		float: left;
+	}
+	
+	#divPendingUpdate {
+		width: 96%;
+		margin: 0 0 1cm 2%;
+		border-radius: 2%;
+		box-shadow: 0 0 1mm 0 black;
+		background-color: #FFF0F0;
+		padding: 1cm 0;
+		font-size: 30px;
+		font-weight: 300;
+		color: red;
+	}
+	
+	#menuBar {
+		width: 96%;
+		margin: 1cm 0;
+		display: inline-block;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		border-radius: 2%;
+		box-shadow: 0 0 1mm 0 black;
+		background-color: #FFF0F0;
+		padding: 2mm 0;
+	}
+	
+	#menuBar table {
+		width: 100%;
+	}
+	
+	#menuBar table td {
+		text-align: center;
+	}
+	
+	#menuBar svg {
+		height: 1.2cm;
+		width: 1.2cm;
+		padding: 5mm;
+		fill: indigo;
+		border-radius: 10%;
+	}
+		
+	#menuBar svg:active {
+		fill: #250030;
+	}
+	
+	#menuBar .number {
+		font-size: 40px;
+		font-weight: 700;
+		margin: 0 2mm;
+		color: indigo;
+		display: inline-block;
+		transform: translateY(-50%);
+	}
+	
+	#menuBar .tip {
+		font-size: 20px;
+		color: indigo;
+		font-weight: 700;
+	}
+		
+	#menuBar table td:active {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	
+	#notifyMeHolder {
+		padding: 1cm;
+		text-align: left;
+	}
+	
+	#notifyMeHolder #chkNotifyMe {
+		height: 8mm;
+		width: 8mm;
+	}
+		
+	#notifyMeHolder label {
+		font-size: 35px;
+	}
+		
+	.commentBox {
+		width: 96%;
+		margin: 5mm 0;
+		display: inline-block;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		border-radius: 2%;
+		border: 1px solid black;
+	}
+	
+	.replyBox {
+		width: 90%;
+		display: inline-block;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		margin: none;
+		transform: translateX(10%);
+		border: 1px solid black;
+		border-left: 3px solid #250030;
+	}
+	
+	#commentsHolder #commenterProfilePic {
+		height: 2cm;
+		width: 2cm;
+		border-radius: 50%;
+		float: left;
+		margin: 5mm;
+		border: 1px solid black;
+		background-color: #FFF0F0;
+	}
+	
+	#commentsHolder #lblName {
+		line-height: 3cm;
+		font-size: 40px;
+		text-indent: 1cm;
+		color: #250030;
+	}
+	
+	#commentsHolder #body p {
+		font-size: 30px;
+		text-indent: 1cm;
+		color: #250030;
+	}
+	
+	#commentsHolder #foot label {
+		text-indent: 1cm;
+		color: purple;
+		display: inline-block;
+	}
+	
+	#commentsHolder #foot .left {
+		font-size: 25px;
+		font-weight: 300;
+		float: left;
+	}
+	
+	#commentsHolder #foot .right {
+		font-size: 30px;
+		font-weight: 700;
+		float: right;
+	}
+	
+	#commentBox {
+		width: 96%;
+		margin: 1cm 0;
+		display: inline-block;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		border-radius: 2%;
+		box-shadow: 0 0 1mm 0 black;
+		background-color: #FFF0E0;
+	}
+	
+	#frmReply  {
+		position: relative;
+	}
+	
+	#frmReply #txtReply {
+		width: 70%;
+		height: 2.9cm;
+		font-size: 30px;
+		margin: none;
+	}
+	
+	#frmReply #btnReply {
+		width: 3cm;
+		height: 3cm;
+		background-color: indigo;
+		color: white;
+		font-size: 30px;
+		font-weight: 700;
+		margin: none;
+		position: absolute;
+	}
+	
+	#frmReply #btnReply:active {
+		background-color: #250030;
+	}
+	
+	.heading {
+		font-size: 40px;
+		font-weight: 300;
+		color: black;
+		display: block;
+		margin: 1cm;
+	}
+	
+	#lblComments {
+		font-size: 40px;
+		font-weight: 300;
+		color: black;
+		display: block;
+		margin: 1cm;
+		text-align: left;
+	}
+	
+#shareContainer {
+	display: none;
+}
+	
+#shareStoryHolder #container {
+	width: 100%;
+	background-color: white;
+	bottom: 0;
+	position: absolute;
+	border-radius: 15px 15px 0 0;
+	box-shadow: 0 0 30px 5px black;
+}
+
+#shareStoryHolder #container #heading {
+	font-size: 40px;
+	font-weight: 300;
+	color: black;
+	display: block;
+	margin: 1cm;
+	text-align: left;
+}
+
+#shareStoryHolder #container #iconHolder {
+	overflow-x: auto;
+}
+
+#shareStoryHolder #container table {
+	width: 100%;
+	text-align: center;
+}
+
+#shareStoryHolder #container table svg {
+	width: 2cm;
+	height: 2cm;
+	margin: 0 5mm
+}
+
+#shareStoryHolder #container table img {
+	width: 2cm;
+	height: 2cm;
+	margin: 0 5mm
+}

@@ -1,0 +1,111 @@
+#main {
+	height: 100%;
+	position: fixed;
+	top: 0;
+}
+
+#frmSubmit {
+	display: inline;
+}
+
+#frmSubmit button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+#frmSubmit input {
+	display: none;
+}
+
+#container {
+	 background-color: grey;
+	 height: 92%;
+	 transform: translateY(-2mm);
+	 margin: 0;
+ }
+ 
+#container #head {
+	 height: 10%;
+	 width: 96%;
+	 margin: 0;
+	 display: table;
+	 padding: 0 2%;
+	 position: relative;
+ }
+ 
+#container #head #heading {
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+ 
+#container #head #svgHolder {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+ 
+#container #head #svgHolder svg {
+	height: 1cm;
+	width: 1cm;
+	padding: 5mm;
+	fill: white;
+	border-radius: 50%;
+}
+ 
+#container #head #svgHolder svg:active {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+ 
+#inpSearch {
+	opacity: 0;
+	width: 0%;
+	margin: 2%;
+	height: 2cm;
+	border-radius: 50px;
+	background-color: white;
+	box-shadow: 0 0 15px 0 black;
+	font-size: 30px;
+	color: black;
+	text-indent: 1cm;
+	position: absolute;
+	right: 0;
+	transition: width 0.1s;
+}
+
+#container #body {
+	 background: white;
+	 height: 89%;
+	 width: 98%;
+	 margin: 0 1%;
+	 border-radius: 10px;
+	 overflow-y: auto;
+ }
+ 
+ .option {
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 3mm 0;
+}
+ 
+ .option:active {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+ 
+.option #name {
+	font-size: 40px;
+	font-weight: 700;
+	color: indigo;
+	line-height: 3cm;
+}
+
+.option #profilePicture {
+	width: 2cm;
+	height: 2cm;
+	margin: 0 1cm;
+	transform: translateY(30%);
+	border-radius: 50%;
+}
+ 

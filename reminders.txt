@@ -1,0 +1,13 @@
+// nick in story stats
+
+//bookmark table
+
+//followers table
+
+//membership column in accounts table
+
+//seen column in notifications table default to false
+
+add sender_usercode column to notifications table default to null
+
+//single_message_threads and messages table

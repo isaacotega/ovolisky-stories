@@ -1,0 +1,98 @@
+	
+	.headStmt {
+		font-size: 40px;
+		font-weight: 700;
+		text-align: left;
+		margin-left: 1cm;
+	}
+	
+	#profilePictureHolder {
+		width: 100%;
+		text-align: center;
+		padding: 1cm 0;
+	}
+	
+	#profilePicture {
+		width: 40%;
+		border-radius: 50%;
+	}
+	
+	#detailsHolder {
+		width: 90%;
+		text-align: center;
+		padding: 0 5%;
+	}
+	
+	#detailsHolder #username {
+		font-size: 60px;
+		font-weight: 700;
+		color: indigo;
+	}
+	
+	#detailsHolder #bioHolder {
+		text-align: left;
+	}
+
+	#detailsHolder #bioHolder p {
+		font-size: 30px;
+		text-indent: 1cm;
+	}
+	
+	#actionsHolder {
+		width: 100%;
+		margin: 1cm 0%;
+		display: inline-block;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		border-radius: 2%;
+		box-shadow: 0 0 1mm 0 black;
+		background-color: #FFF0F0;
+	}
+	
+	#actionsHolder table {
+		width: 100%;
+	}
+	
+	#actionsHolder table td {
+		text-align: center;
+	}
+	
+	#actionsHolder svg {
+		height: 1.2cm;
+		width: 1.2cm;
+		padding: 5mm;
+		fill: indigo;
+		border-radius: 10%;
+	}
+		
+	#actionsHolder svg:active {
+		fill: #250030;
+	}
+	
+	#actionsHolder .tip {
+		font-size: 20px;
+		color: indigo;
+		font-weight: 700;
+	}
+		
+	#actionsHolder table td:active {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	
+#tblDetails {
+	width: 100%;
+	text-align: left;
+	font-size: 30px;
+}
+	
+#tblDetails td {
+	line-height: 1.5cm;
+	font-size: 30px;
+	font-weight: 700;
+	color: indigo;
+}
+
+.followerOnlyIcons {
+	display: none;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /control-room/
+Noindex: /control-room/
+Sitemap: https://stories.ovolisky.com/sitemap.xml

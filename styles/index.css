@@ -1,0 +1,584 @@
+body {
+	background: #FFFAFA;
+	margin: 0;scroll-behavior: smooth;
+}
+
+button {
+	outline: none;
+}
+ 
+ input {
+	outline: none;
+}
+
+ textarea {
+	outline: none;
+}
+
+ select {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.mainCover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 2;
+}
+
+.searchInput {
+	display: block;
+	width: 96%;
+	margin: 2%;
+	height: 2cm;
+	border-radius: 50px;
+	background-color: white;
+	box-shadow: 0 0 5px 0 black;
+	font-size: 30px;
+	color: black;
+	text-indent: 1cm;
+}
+
+/* Placeholders */
+
+#placeholder {
+	height: 10cm;
+	width: 90%;
+	display: table;
+	text-align: center;
+	padding: 5% 5% 15% 5%;
+}
+
+#placeholder #message {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#placeholder #loader {
+	width: 1cm;
+	height: 1cm;
+	border: 5px solid rgba(255, 239, 193, 0.7);
+	border-top: 5px solid black;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 3mm;
+	vertical-align: middle;
+	-webkit-animation: spin 0.4s linear infinite;
+}
+
+ /* Header */
+ 
+ #topBar {
+	background-color: #250030;
+	color: white;
+	height: 3cm;
+	width: 100%;
+	border: none;
+	box-shadow: 0 0 20px 0 black;
+	line-height: 3cm;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#topBar #heading {
+	font-weight: 300;
+	font-size: 50px;
+	float: left;
+	margin-left: 1cm;
+}
+
+#topBar #navIcon {
+	font-weight: 700;
+	font-size: 40px;
+	float: left;
+	margin-left: 10px;
+	transition: color 0.2s;
+}
+
+#topBar .iconNumber {
+	border-radius: 50%;
+	border: none;
+	background-color: purple;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	height: 1cm;
+	width: 1cm;
+}
+
+#topBar #notificationIcon {
+	float: right;
+	margin: 5mm 1mm;
+	transition: color 0.2s;
+	fill: white;
+}
+
+#topBar #chapterNavIcon {
+	font-weight: 700;
+	font-size: 40px;
+	float: right;
+	margin-right: 10px;
+	transition: color 0.2s;
+}
+
+#topBar #topProfilePic {
+	float: right;
+	border-radius: 50%;
+	margin: 5mm;
+	height: 2cm;
+	width: 2cm;
+	box-shadow: 0 0 5px 0 blue;
+}
+
+/* SideNav */
+
+#sideNav {
+	background-color: #250030;
+	height: 100%;
+	width: 0;
+	box-shadow: 0 0 30px  black;
+	border: none;
+	outline: none;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: width 0.2s;
+}
+
+#chapterNav {
+	background-color: white;
+	height: 100%;
+	width: 0;
+	box-shadow: 0 0 10px 0 black;
+	border: none;
+	outline: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: width 0.2s;
+}
+
+#chapterNav .sideLinks {
+	color: #250030;
+}
+
+.sideLinks {
+	font-size: 45px;
+	text-align: left;
+	text-indent: 1cm;
+	color: white;
+	display: block;
+	width: 100%;
+	line-height: 3.5cm;
+}
+
+.sideLinks:active {
+	font-size: 50px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Success Bar */
+
+.successBar {
+	width: 90%;
+	margin: 4cm 5% 0 5%;
+	border-radius: 2%;
+	box-shadow: 0 0 10px 0 #250030;
+	text-align: center;
+}
+
+.successBar #iconHolder {
+	width: 5cm;
+	height: 5cm;
+	float: left;
+}
+
+.successBar #iconHolder img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.successBar #messageHolder {
+	height: 5cm;
+	overflow-y: auto;
+	text-align: left;
+}
+
+.successBar #messageHolder p {
+	font-size: 22px;
+	text-indent: 1cm;
+}
+
+/* Forms */
+
+.form {
+	width: 90%;
+	margin: 4cm 5%;
+	border-radius: 2%;
+	box-shadow: 0 0 10px 0 #250030;
+	text-align: center;
+	background-color: #FFF0F0;
+}
+
+.form .formHeading {
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.form .formError {
+	color: red;
+	font-size: 25px;
+	font-weight: 300;
+	height: 2cm;
+	width: 80%;
+	margin: 1cm 0 0 10%;
+	border-radius: 5%;
+	border: 2px dashed red;
+	display: none;
+}
+
+.form .formError label {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.form .formLabel {
+	font-size: 30px;
+	font-weight: 300;
+	max-width: 90%;
+	display: inline-block;
+}
+
+.form .input {
+	height: 2cm;
+	width: 80%;
+	margin: 3mm 0;
+	font-size: 30px;
+}
+
+.form .slt {
+	height: 2cm;
+	width: 80%;
+	margin: 3mm 0;
+	font-size: 30px;
+}
+
+.form .txt {
+	height: 10cm;
+	width: 80%;
+	margin: 3mm 0;
+	font-size: 25px;
+}
+
+.form .lengthIndicator {
+	display: inline-block;
+	text-align: right;
+	font-size: 25px;
+	width: 80%;
+}
+
+.form .radioHolder {
+	width: 80%;
+	margin-left: 10%;
+	text-align: left;
+}
+
+.form .radio + label {
+	font-size: 30px;
+	color: indigo;
+}
+
+.form .radio {
+	height: 1cm;
+	width: 1cm;
+	margin: 0 2mm;
+}
+
+.form table {
+	width: 80%;
+	font-size: 25px;
+	font-weight: 300;
+	margin-left: 10%;
+}
+
+.form table td {
+	height: 1.5cm;
+}
+
+.form .submit {
+	height: 2cm;
+	width: 7cm;
+	border-radius: 10%;
+	font-size: 30px;
+	background-color: purple;
+	color: white;
+	border: none;
+}
+
+.form .otherButton {
+	height: 2cm;
+	width: 7cm;
+	border-radius: 10%;
+	font-size: 30px;
+	background-color: blue;
+	color: white;
+	border: none;
+}
+
+.form button:active {
+	background-color: indigo;
+}
+
+/* Main */
+
+#slogan {
+	font-weight: 300;
+	text-align: center;
+	width: 100%;
+	color: indigo;
+	font-size: 35px;
+	font-family: times;
+	margin: 1cm 0;
+}
+
+#title {
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	color: indigo;
+	font-size: 60px;
+	font-family: cursive;
+	margin: 1cm 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+				
+#main {
+	margin-top: 3.2cm;
+	margin-right: 0;
+	width: 100%;
+}
+
+.navigationBtn {
+	height: 3cm;
+	min-width: 3cm;
+	padding: 0 1cm;
+	border-radius: 10%;
+	font-size: 28px;
+	font-weight: 700;
+	color: white;
+	background-color: indigo;
+	float: right;
+	margin: 3mm;
+}
+	
+.navigationBtn:active {
+	background-color: purple;
+}
+
+/* Boxes */
+
+.box {
+	width: 11cm;
+	text-align: center;
+	border-radius: 5%;
+	margin: 5mm;
+	position: relative;
+	box-shadow: 0 0 2mm 1mm black;
+	background-color: #250030;
+	display: inline-block;
+}
+				
+.box #image {
+	width: 10.5cm;
+	height: 8.5cm;
+	margin-top: 3mm;
+	border-radius: 5%;
+	margin-left: 2.5mm;
+	display: block;
+	background-color: indigo;
+}
+				
+.box #info {
+	width: 10.5cm;
+	margin: 3mm 0;
+	//background-color: blue;
+	display: inline-block;
+	
+}
+
+.box #info #lblCategory {
+	display: inline-block;
+	line-height: 2cm;
+	color: white;
+	font-size: 35px;
+	font-weight: 700;
+	font-family: cursive;
+	overflow: hidden;
+}
+				
+.box #info #storyName {
+	display: block;
+	width: 100%;
+	height: 2.5cm;
+	line-height: 1.2cm;
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: cursive;
+	overflow-y: scroll;
+}
+		
+.box #info #chapter {
+	display: block;
+	line-height: 1.2cm;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: times;
+	text-align: left;
+	text-indent: 10px;
+}
+		
+.box #info #storyGenre {
+	display: block;
+	line-height: 1.2cm;
+	color: cyan;
+	font-size: 27px;
+	font-weight: 700;
+	font-family: times;
+	text-align: center;
+	text-indent: 10px;
+}
+		
+.box #info #upvotes {
+	display: inline-block;
+	line-height: 1cm;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: times;
+	text-align: left;
+	text-indent: 10px;
+}
+				
+.box #info #views {
+	display: inline-block;
+	line-height: 1cm;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: times;
+	text-align: left;
+	text-indent: 10px;
+}
+				
+/* Footer */
+
+#footer {
+	background-color: #250030;
+	width: 100%;
+	margin: 0;
+	text-align: left;
+}
+
+#footer #left {
+	width: 49%;
+	display: inline-block;
+	margin: 0;
+}
+
+#footer #right {
+	width: 49%;
+	display: inline-block;
+}
+
+#footer #bottom {
+	text-align: center;
+	width: 100%;
+}
+
+#footer #left label {
+	font-weight: 300;
+	font-size: 25px;
+	margin-left: 20px;
+	color: white;
+}
+
+#footer #right label {
+	font-weight: 300;
+	font-size: 28px;
+	color: white;
+}
+
+#footer #bottom #copyright {
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	line-height: 2cm;
+}
+
+#footer #bottom #reservedRight {
+	font-weight: 700;
+	font-size: 20px;
+	color: orange;
+	line-height: 1cm;
+}
+
+#cookieAlert {
+	background-color: rgba(255, 239, 250, 0.8);
+	box-shadow: 0 0 5px 0 black;
+	border-radius: 15px;
+	width: 92%;
+	margin-left: 2%;
+	text-align: center;
+	position: fixed;
+	bottom: 1cm;
+	padding: 2%;
+	z-index: 9;
+}
+
+#cookieAlert #statementHolder p {
+	font-weight: 300;
+	font-size: 25px;
+}
+
+#cookieAlert #buttonHolder #btnOk {
+	font-weight: 700;
+	font-size: 25px;
+	color: white;
+	background-color: green;
+	border-radius: 7px;
+	padding: 5mm 2cm;
+}
+
+#cookieAlert #buttonHolder #btnOk:active {
+	background-color: darkgreen;
+}
